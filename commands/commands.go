@@ -9,7 +9,7 @@ import (
 func run() {
 	app := cli.NewApp()
 	app.Name = "Sakara Module Builder"
-	app.Usage = "Let's you build your module and extract the module API in seconds"
+	app.Usage = "Let's us build your module and extract the module API in seconds"
 
 	ModuleBuilderFlags := []cli.Flag{
 		cli.StringFlag{
