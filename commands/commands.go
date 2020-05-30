@@ -1,12 +1,10 @@
 package commands
 
 import (
-	"fmt"
-
 	"github.com/urfave/cli"
 )
 
-func run() {
+func Run() {
 	app := cli.NewApp()
 	app.Name = "Sakara Module Builder"
 	app.Usage = "Let's us build your module and extract the module API in seconds"
@@ -25,7 +23,6 @@ func run() {
 			Usage: "Create New module",
 			Flags: ModuleBuilderFlags,
 			Action: func(c *cli.Context) {
-				fmt.Printf("S")
 				ModuleBuilderInit(c)
 			},
 		}, {
